@@ -14,3 +14,5 @@ puts "Enter store name:"
 new_store_name = gets.chomp.to_s
 
 @store_exercise_7 = Store.create(name: new_store_name)
+
+puts @store_exercise_7.errors.full_messages
